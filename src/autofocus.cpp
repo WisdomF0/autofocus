@@ -13,8 +13,8 @@ public:
         // 初始化订阅器，订阅图像话题
         nh_.param<std::string>("test_method", test_method_, "laplacian");
         nh_.param<std::string>("sub_name", sub_name_, "/camera/image_raw");
-        nh_.param<int>("chessboard_rows", chessboard_rows_, 8);  // 默认棋盘格6行
-        nh_.param<int>("chessboard_cols", chessboard_cols_, 11);  // 默认棋盘格9列
+        nh_.param<int>("chessboard_rows", chessboard_rows_, 8);  // 默认棋盘格8行
+        nh_.param<int>("chessboard_cols", chessboard_cols_, 11);  // 默认棋盘格11列
 
         // 打印节点名称
         ROS_INFO("Subscribe Name: %s", sub_name_.c_str());

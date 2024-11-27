@@ -1,0 +1,10 @@
+<launch>
+    <!-- 按键监听节点 -->
+    <node pkg="hikrobot_camera" type="autofocus" name="autofocus" output="screen">
+        <!-- 可选的参数，例如监听的按键 -->
+        <param name="test_method" value="sfr"/>
+        <param name="sub_name" value="/hikrobot_cameraR"/>
+        <param name="chessboard_rows" value="8"/>
+        <param name="chessboard_cols" value="11"/>
+    </node>
+</launch>
